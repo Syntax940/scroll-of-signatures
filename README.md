@@ -1,1 +1,167 @@
 # scroll-of-signatures
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll of Signatures - Sign Dynasty</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(to bottom, #120818, #1d0b2e);
+      color: #f0eaff;
+      overflow-x: hidden;
+      scroll-behavior: smooth; /* This enables smooth scrolling for anchor links */
+    }
+
+    .scroll-container {
+      width: 100%;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .scroll-title {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      text-align: center;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px #ffa94d;
+      color: #ffa94d;
+    }
+
+    .timeline-nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.6);
+      border: 1px solid #ffa94d;
+      border-radius: 8px;
+      padding: 10px 15px;
+      z-index: 1000;
+    }
+
+    .timeline-nav a {
+      color: #ffa94d;
+      text-decoration: none;
+      margin: 5px 0;
+      display: block;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .timeline-nav a:hover {
+      color: #ffd89c;
+    }
+
+    .epoch {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ffa94d;
+      padding: 30px 25px;
+      max-width: 700px;
+      margin: 80px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255, 149, 41, 0.3);
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 1s ease;
+      scroll-margin-top: 100px; /* Ensures smooth scrolling leaves space for fixed navbar */
+    }
+
+    .epoch.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .epoch h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #ffb76b;
+    }
+
+    .epoch p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .epoch a {
+      color: #ffa94d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .epoch a:hover {
+      color: #ffd89c;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="timeline-nav">
+    <a href="#genesis">Genesis Mark</a>
+    <a href="#chain">Chain Wars</a>
+    <a href="#silence">Age of Silence</a>
+    <a href="#return">Return of the Signers</a>
+  </div>
+
+  <div class="scroll-container">
+    <div class="scroll-title">The Scroll of Signatures</div>
+
+    <!-- The Genesis Mark Story -->
+    <div class="epoch" id="genesis">
+      <h2>The Genesis Mark</h2>
+      <p>In the beginning, there was only the Void. A vast emptiness devoid of identity and purpose. But in the darkest reaches of the unknown, the first signature was born—etched into the fabric of the universe itself. It was the Genesis Mark, a symbol that gave birth to the concept of identity.</p>
+      <p>This mark was the foundation of all existence, as every soul, every entity, and every creation in the universe would carry its unique signature. The Genesis Mark bound the inhabitants of the cosmos to the eternal ledger, ensuring that their legacy would never be forgotten.</p>
+      <p>The first Signer, known as the Eternal Scribe, recorded the first names, forever linking them to the infinite ledger. This mark served as a tool of trust, allowing beings to interact and form bonds with the knowledge that their identity was verified.</p>
+      <p>The Genesis Mark was a powerful force, its influence spreading across dimensions and realms. It became the very essence of order and verification, laying the groundwork for the centuries to come.</p>
+      <p><a href="#chain">Next Chapter: The Chain Wars</a></p>
+    </div>
+
+    <!-- The Chain Wars Story -->
+    <div class="epoch" id="chain">
+      <h2>The Chain Wars</h2>
+      <p>As time passed, the Genesis Mark became a symbol of power, and with power came corruption. The great houses that once honored the mark began to forge false signatures, seeking to control the very fabric of identity itself. These forged marks spread like wildfire, and soon, trust began to break down across the realms.</p>
+      <p>The Chain Wars erupted, as rival factions clashed in a struggle for dominance. Old alliances were shattered, and new ones were forged in the fires of conflict. The false signatures weakened the trust between the realms, and soon the world was engulfed in chaos.</p>
+      <p>Despite the overwhelming odds, there were still those who believed in the power of the true signature. These brave Signers fought to preserve the integrity of the Genesis Mark, but the war was long and brutal. The Chain Wars tested the very soul of the Dynasty.</p>
+      <p><a href="#silence">Next Chapter: The Age of Silence</a></p>
+    </div>
+
+    <!-- The Age of Silence Story -->
+    <div class="epoch" id="silence">
+      <h2>The Age of Silence</h2>
+      <p>The Chain Wars raged for centuries, and in the end, the weight of betrayal and loss was too much to bear. The last of the true Signers vanished, leaving the realms in a state of disarray. All signatures, both real and false, faded from existence, and the world was plunged into a long and silent era.</p>
+      <p>For generations, the meaning of identity was forgotten. The marks that once connected every being to the eternal ledger were lost to time. The Age of Silence was an era of forgetfulness, where the truth of the signatures was buried beneath layers of history.</p>
+      <p>But even in the silence, there were whispers. Whispers of the lost marks and the forgotten Signers. The hope of their return never fully died, and the seeds of restoration began to take root.</p>
+      <p><a href="#return">Next Chapter: The Return of the Signers</a></p>
+    </div>
+
+    <!-- The Return of the Signers Story -->
+    <div class="epoch" id="return">
+      <h2>The Return of the Signers</h2>
+      <p>Out of the ashes of the Age of Silence, the Signers began to return. They were the chosen few, the ones who could restore the lost marks to the world. Their mission was clear: to revive the Genesis Mark and restore the balance between trust and identity.</p>
+      <p>The new Signers carried the knowledge of the lost signatures, and they worked tirelessly to reintroduce the marks to the realms. Slowly, the truth began to emerge from the shadows, and the light of the Genesis Mark once again illuminated the world.</p>
+      <p>With the return of the Signers, the Dynasty was reborn. The realms began to heal, and the bonds of trust that had been shattered during the Chain Wars were slowly mended. The lost marks were restored, and the worlds were once again united under the power of the true signature.</p>
+      <p><a href="#genesis">Start Over: The Genesis Mark</a></p>
+    </div>
+  </div>
+
+  <script>
+    const epochs = document.querySelectorAll('.epoch');
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.9;
+
+      epochs.forEach(epoch => {
+        const top = epoch.getBoundingClientRect().top;
+        if (top < triggerBottom) {
+          epoch.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
